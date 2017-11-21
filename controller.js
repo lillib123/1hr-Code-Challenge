@@ -4,10 +4,17 @@
       vm.changeWords = function(newWord) {
       StoryService.setWords(newWord);
     };
+      vm.redirect = function() {
+        window.location = "#!/View your story";
+    };
   }
   function DisplayController(StoryService) {
     var vm=this;
     vm.wordInfo = StoryService.getWords();
+
+    vm.redirect = function() {
+      window.location = "#!/Enter Text";
+  };
   }
 
   angular

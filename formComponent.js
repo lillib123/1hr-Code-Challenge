@@ -5,7 +5,7 @@ var formComponent = {
              <input placeholder="a famous person" ng-model="form.info.two">
              <input placeholder="adverb" ng-model="form.info.three">
              <input placeholder="sound" ng-model="form.info.four">
-             <button ng-click="form.changeWords(form.info);">Submit your words!</button>
+             <button ng-click="form.changeWords(form.info); form.redirect();">Submit your words!</button>
              </div>`
 };
 angular
