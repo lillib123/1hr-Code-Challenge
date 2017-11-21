@@ -6,17 +6,13 @@
       getWords: getWords
     }
   };
-
-
-function setWords(newWord) {
-  displayWords = newWord;
-}
-
-function getWords() {
-  return displayWords;
-}
-
-angular
+  function setWords(newWord) {
+    displayWords = newWord;
+  }
+  function getWords() {
+    return displayWords;
+  }
+  angular
   .module("storyApp")
   .factory("StoryService", StoryService);
 })();

@@ -1,11 +1,11 @@
 (function(){
   function FormController(StoryService) {
     var vm=this;
-      vm.changeWords = function(newWord) {
+    vm.changeWords = function(newWord) {
       StoryService.setWords(newWord);
     };
-      vm.redirect = function() {
-        window.location = "#!/View your story";
+    vm.redirect = function() {
+      window.location = "#!/View your story";
     };
   }
   function DisplayController(StoryService) {
@@ -14,11 +14,10 @@
 
     vm.redirect = function() {
       window.location = "#!/Enter Text";
-  };
+    };
   }
-
   angular
-   .module("storyApp")
-   .controller("FormController", FormController)
-   .controller("DisplayController", DisplayController);
+  .module("storyApp")
+  .controller("FormController", FormController)
+  .controller("DisplayController", DisplayController);
 })();
